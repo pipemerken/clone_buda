@@ -50,7 +50,6 @@ namesMarket.each do |i|
   transactions = extractTransaction(response)
   names = extractName(response)
   transactionsMax = transactions.max
-  puts "***************---------***************"
   puts "- Para el mercado #{names[0]}" , "- La transaccion con mayor valor en las ultimas 24 horas fue:"," - Cantidad: #{transactionsMax[0]} - Precio: #{transactionsMax[1]} #{i[1]} "
 end
 
